@@ -1,0 +1,335 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #c2185b; /* Color granate */
+}
+
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Sección de Historia */
+#historia {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+#historia h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#historia p {
+    margin-bottom: 20px;
+}
+
+#historia ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#historia ul li {
+    background-color: #fce4ec; /* Color rosa */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Botón de "Conoce más" */
+button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #c2185b; /* Color granate */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ad1457; /* Color granate oscuro */
+}
+
+/* Estilos específicos para las secciones */
+#historia h2 {
+    margin-top: 40px;
+    border-left: 5px solid #c2185b; /* Borde izquierdo granate */
+    padding-left: 10px;
+}
+
+#historia p strong {
+    color: #ad1457; /* Color granate oscuro */
+}
+
+#historia p em {
+    color: #c2185b; /* Color granate */
+}
+
+/* Estilo de las imágenes */
+#historia img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Estilo de los contenedores */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container .box {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #fce4ec; /* Color rosa */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.container .box img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.container .box:nth-child(odd) {
+    background-color: #ffebee; /* Color rosado más claro */
+}
+    /* Footer */
+footer {
+    background-color: #B90A04;
+    color: #FBFBFF;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content > div {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-content h3 {
+    margin-bottom: 20px;
+}
+
+.footer-content p, .footer-content a, .footer-content form {
+    margin-bottom: 10px;
+}
+
+.footer-content a {
+    color: #FBFBFF;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content form input, .footer-content form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-content form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E7E8E4;
+    color: #B90A04;
+    cursor: pointer;
+}
+
+.footer-content form button:hover {
+    background-color: #FBFBFF;
+}
+
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #B90A04;
+    padding: 20px 0;
+    color: #FBFBFF;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header .school-name {
+    margin-left: 10px;
+    font-weight: bold;
+    text-align:left;
+}
+
+header .school-name strong {
+    display: block;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+}
+
+header nav ul li {
+    position: relative;
+    margin-left: 2px;
+}
+
+header nav ul li a {
+    color: #FBFBFF;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Menu */
+header nav ul .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #B90A04;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+}
+
+header nav ul .dropdown li {
+    width: 100%;
+    position: relative;
+}
+
+header nav ul .dropdown li a {
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+header nav ul .dropdown li .dropdown {
+    left: 100%;
+    top: 0;
+}
+
+header nav ul li:hover > .dropdown {
+    display: block;
+}
+
+/* Para asegurarnos de que el dropdown desaparezca cuando se mueva el cursor fuera del menú */
+header nav ul li:hover > a {
+    text-decoration: underline;
+}
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #B90A04;
+    padding: 20px 0;
+    color: #FBFBFF;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header .school-name {
+    margin-left: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+header .school-name strong {
+    display: block;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 2px;
+}
+
+header nav ul li a {
+    color: #FBFBFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Espacio blanco */
+.white-space {
+    height: 50px; /* Altura del espacio blanco ajustable según tus necesidades */
+    background-color: #FBFBFF; /* Color de fondo blanco */

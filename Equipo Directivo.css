@@ -1,0 +1,316 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Equipo Directivo Section */
+#equipo-directivo {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#equipo-directivo .intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#equipo-directivo h2 {
+    color: #c2185b; /* Color granate */
+    margin-bottom: 10px;
+}
+
+#equipo-directivo p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Container for the team members */
+#equipo-directivo .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Individual member card */
+#equipo-directivo .member {
+    background-color: #fce4ec; /* Light pink background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 calc(33% - 20px);
+    max-width: calc(33% - 20px);
+    transition: transform 0.3s;
+}
+
+#equipo-directivo .member img {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #c2185b; /* Border color */
+}
+
+#equipo-directivo .member h2 {
+    color: #ad1457; /* Darker pink color */
+    font-size: 18px;
+    margin: 15px 0 5px;
+}
+
+#equipo-directivo .member p {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Hover effect for the member card */
+#equipo-directivo .member:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #equipo-directivo .member {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    #equipo-directivo .member {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+ /* Footer */
+footer {
+    background-color: #B90A04;
+    color: #FBFBFF;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content > div {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-content h3 {
+    margin-bottom: 20px;
+}
+
+.footer-content p, .footer-content a, .footer-content form {
+    margin-bottom: 10px;
+}
+
+.footer-content a {
+    color: #FBFBFF;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content form input, .footer-content form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-content form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E7E8E4;
+    color: #B90A04;
+    cursor: pointer;
+}
+
+.footer-content form button:hover {
+    background-color: #FBFBFF;
+}
+
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #B90A04;
+    padding: 20px 0;
+    color: #FBFBFF;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header .school-name {
+    margin-left: 10px;
+    font-weight: bold;
+    text-align:left;
+}
+
+header .school-name strong {
+    display: block;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+}
+
+header nav ul li {
+    position: relative;
+    margin-left: 2px;
+}
+
+header nav ul li a {
+    color: #FBFBFF;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Menu */
+header nav ul .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #B90A04;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+}
+
+header nav ul .dropdown li {
+    width: 100%;
+    position: relative;
+}
+
+header nav ul .dropdown li a {
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+header nav ul .dropdown li .dropdown {
+    left: 100%;
+    top: 0;
+}
+
+header nav ul li:hover > .dropdown {
+    display: block;
+}
+
+/* Para asegurarnos de que el dropdown desaparezca cuando se mueva el cursor fuera del menú */
+header nav ul li:hover > a {
+    text-decoration: underline;
+}
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #B90A04;
+    padding: 20px 0;
+    color: #FBFBFF;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header .school-name {
+    margin-left: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+header .school-name strong {
+    display: block;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 2px;
+}
+
+header nav ul li a {
+    color: #FBFBFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Espacio blanco */
+.white-space {
+    height: 50px; /* Altura del espacio blanco ajustable según tus necesidades */
+    background-color: #FBFBFF; /* Color de fondo blanco */

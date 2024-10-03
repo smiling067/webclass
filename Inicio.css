@@ -1,0 +1,369 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #B90A04;
+    padding: 20px 0;
+    color: #FBFBFF;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header .school-name {
+    margin-left: 10px;
+    font-weight: bold;
+    text-align:left;
+}
+
+header .school-name strong {
+    display: block;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+}
+
+header nav ul li {
+    position: relative;
+    margin-left: 2px;
+}
+
+header nav ul li a {
+    color: #FBFBFF;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Menu */
+header nav ul .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #B90A04;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+}
+
+header nav ul .dropdown li {
+    width: 100%;
+    position: relative;
+}
+
+header nav ul .dropdown li a {
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+header nav ul .dropdown li .dropdown {
+    left: 100%;
+    top: 0;
+}
+
+header nav ul li:hover > .dropdown {
+    display: block;
+}
+
+/* Para asegurarnos de que el dropdown desaparezca cuando se mueva el cursor fuera del menú */
+header nav ul li:hover > a {
+    text-decoration: underline;
+}
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #B90A04;
+    padding: 20px 0;
+    color: #FBFBFF;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header .school-name {
+    margin-left: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+header .school-name strong {
+    display: block;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 2px;
+}
+
+header nav ul li a {
+    color: #FBFBFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Espacio blanco */
+.white-space {
+    height: 50px; /* Altura del espacio blanco ajustable según tus necesidades */
+    background-color: #E7E8E4; /* Color de fondo blanco */
+}
+
+/* Slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Altura de la imagen */
+    overflow: hidden;
+}
+
+.slider video {
+    position: absolute;
+    top: 0;
+    left: 10;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Asegura que la imagen se vea completa sin recortarse */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img.imagen1 {
+    z-index: 1; /* La primera imagen estará en el fondo */
+}
+
+.slider:hover > img {
+    transform: scale(1.1); /* Al pasar el cursor sobre las imágenes, estas se agrandan */
+}
+
+/* Info Section */
+.info-section {
+    background-color: #E7E8E4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.info-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    background-color: #FBFBFF;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info-box img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.info-box p {
+    font-size: 16px;
+}
+
+.values-section {
+    background-color: #B90A04;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.value-box {
+    text-align: center;
+    color: #FBFBFF;
+}
+
+.value-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.value-box p {
+    font-size: 18px;
+}
+
+/* Preview Section */
+.preview-section {
+    background-color: #E3E2DD;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.preview-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.previews {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.preview-box {
+    background-color: #FBFBFF;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.preview-box img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.preview-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.preview-box button {
+    background-color: #B90A04;
+    color: #FBFBFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.preview-box button:hover {
+    background-color: #C60F09;
+}
+
+/* Footer */
+footer {
+    background-color: #B90A04;
+    color: #FBFBFF;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content > div {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-content h3 {
+    margin-bottom: 20px;
+}
+
+.footer-content p, .footer-content a, .footer-content form {
+    margin-bottom: 10px;
+}
+
+.footer-content a {
+    color: #FBFBFF;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content form input, .footer-content form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-content form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E7E8E4;
+    color: #B90A04;
+    cursor: pointer;
+}
+
+.footer-content form button:hover {
+    background-color: #FBFBFF;
+}

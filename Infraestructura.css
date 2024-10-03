@@ -1,0 +1,366 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #c2185b;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Header */
+header {
+    background-color: #B90A04;
+    color: #FBFBFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FBFBFF;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFEB3B;
+}
+
+/* Sección de Infraestructura */
+#infraestructura {
+    padding: 50px 0;
+    background-color: #FFFFFF;
+}
+
+.infraestructura-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.infraestructura-item:hover {
+    background-color: #c2185b;
+}
+
+.infraestructura-item img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    transition: transform 0.5s ease;
+}
+
+.infraestructura-item:hover img {
+    transform: scale(1.1);
+}
+
+.infraestructura-item-text {
+    width: 100%;
+    padding: 20px;
+    background-color: #FBFBFF;
+    border-radius: 0 0 20px 20px;
+}
+
+.infraestructura-item h3 {
+    color: #c2185b;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.infraestructura-item p {
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+/* Alinear imagen a la derecha en dispositivos más pequeños */
+@media (max-width: 768px) {
+    .infraestructura-item img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .infraestructura-item-text {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #B90A04;
+    color: #FBFBFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/* Footer */
+footer {
+    background-color: #B90A04;
+    color: #FBFBFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+    /* Footer */
+footer {
+    background-color: #B90A04;
+    color: #FBFBFF;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content > div {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-content h3 {
+    margin-bottom: 20px;
+}
+
+.footer-content p, .footer-content a, .footer-content form {
+    margin-bottom: 10px;
+}
+
+.footer-content a {
+    color: #FBFBFF;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content form input, .footer-content form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-content form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E7E8E4;
+    color: #B90A04;
+    cursor: pointer;
+}
+
+.footer-content form button:hover {
+    background-color: #FBFBFF;
+}
+
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #B90A04;
+    padding: 20px 0;
+    color: #FBFBFF;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header .school-name {
+    margin-left: 10px;
+    font-weight: bold;
+    text-align:left;
+}
+
+header .school-name strong {
+    display: block;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+}
+
+header nav ul li {
+    position: relative;
+    margin-left: 2px;
+}
+
+header nav ul li a {
+    color: #FBFBFF;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Menu */
+header nav ul .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #B90A04;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+}
+
+header nav ul .dropdown li {
+    width: 100%;
+    position: relative;
+}
+
+header nav ul .dropdown li a {
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+header nav ul .dropdown li .dropdown {
+    left: 100%;
+    top: 0;
+}
+
+header nav ul li:hover > .dropdown {
+    display: block;
+}
+
+/* Para asegurarnos de que el dropdown desaparezca cuando se mueva el cursor fuera del menú */
+header nav ul li:hover > a {
+    text-decoration: underline;
+}
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #B90A04;
+    padding: 20px 0;
+    color: #FBFBFF;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header .school-name {
+    margin-left: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+header .school-name strong {
+    display: block;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 2px;
+}
+
+header nav ul li a {
+    color: #FBFBFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Espacio blanco */
+.white-space {
+    height: 50px; /* Altura del espacio blanco ajustable según tus necesidades */
+    background-color: #FBFBFF; /* Color de fondo blanco */
